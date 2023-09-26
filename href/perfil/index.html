@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nudles</title>
+    <!-- css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- css app -->
+    <link rel="stylesheet" href="/geral/css/style.css" />
+    <!-- script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- script app -->
+    <script src="./src/app.js" defer type="module"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- model viewer -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
+  </head>
+
+  <body class="h-100 w-100 wh-100 bg-light">
+    <!-- header -->
+    <header
+      class="bg-white text-body header d-flex justify-content-center align-items-center w-100"
+    >
+      <nav class="navbar navbar-expand-lg p-0 w-100">
+        <div class="container">
+          <!-- Logo START -->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="https://media.licdn.com/dms/image/D560BAQHAs7GWFhSnng/company-logo_200_200/0/1689893020977?e=2147483647&v=beta&t=W2QZpgZ1aTfcmXvGrpWG7n92OdMTCZWjgybUWb0S79c"
+              alt="logo"
+              class="img-fluid logo rounded"
+            />
+          </a>
+          <!-- Logo END -->
+
+          <!-- Responsive navbar toggler -->
+          <button
+            class="ms-auto icon-md btn btn-light px-2 border-0 nav-menu-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-animation">
+              <span><i class="bi bi-list h3"></i></span>
+            </span>
+          </button>
+
+          <!-- Main navbar START -->
+          <div
+            class="collapse navbar-collapse z-2 bg-white-collapse"
+            id="navbarCollapse"
+          >
+            <div
+              class="collapse navbar-collapse bg-white-collapse"
+              id="navbarCollapse"
+            >
+              <div
+                class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0"
+              >
+                <div class="nav-item w-100">
+                  <form class="rounded position-relative">
+                    <input
+                      class="form-control ps-5 bg-light"
+                      id="search"
+                      type="search"
+                      placeholder="Buscar..."
+                      aria-label="Search"
+                    />
+                    <button
+                      class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
+                      type="submit"
+                    >
+                      <i class="fs-6 bi bi-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <ul
+                class="navbar-nav navbar-nav-scroll ms-auto nav-menu bg-white-collapse nav-bar-nav-itens-menu"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle icon-link-hover"
+                    href="#"
+                    id="pagesMenu"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Paginas</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                    <li><a class="dropdown-item" href="#">Grupos</a></li>
+                    <li><a class="dropdown-item" href="#">Mensagens</a></li>
+                    <li><a class="dropdown-item" href="#">Pefil</a></li>
+                    <li><a class="dropdown-item" href="#">Eventos</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Pagina Inicial</a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#" target="_blank">
+                        <i class="bi bi-question-lg"></i>Ajuda
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle icon-link-hover"
+                    href="#"
+                    id="postMenu"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Conta</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="postMenu">
+                    <li><a class="dropdown-item" href="#">Criar pagina</a></li>
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li><a class="dropdown-item" href="#">Notificações</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Centro de Ajuda</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Termos & Privacidade</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+              <!-- metodos para entrar informações do usuario -->
+              <div class="text-start mx-4 my-2" id="perfil-methods">
+                <button
+                  type="button"
+                  id="loginButton"
+                  class="loginInput btn btn-outline-dark me-2"
+                >
+                  Entrar
+                </button>
+                <button
+                  type="button"
+                  id="registerButton"
+                  class="registerInput btn btn-primary"
+                >
+                  Registrar
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="d-flex justify-content-center w-100 h-100 my-4">
+      <div class="container h-100">
+        <div class="row perfil-row-content">
+          <div class="col-8 px-3">
+            
+            <div id="card-profile-html">
+
+
+            </div>
+
+              <div id="user-post">
+                
+              </div>
+              <div class="col" id="comments-return">
+
+              </div>
+              <br>
+              <!-- aqui fica o spinner de carregamento -->
+              <div id="loading-indicator" style="display: none;">
+                <div class="text-center pt-2">
+                  <div class="spinner-grow text-primary" role="status">
+                    <span class="visually-hidden">Carregando...</span>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col px-2" id="about-return">
+            <br>
+            
+            <div id="about-user">
+              
+            </div>
+            
+            <div class="pt-3">
+              <!-- diferencial -->
+              <model-viewer id="perfil-model-viewer" class="w-100 bg-white rounded"></model-viewer>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <ul class="nav small mt-4 justify-content-center lh-1">
+        <li class="nav-item">
+          <a class="nav-link link-secondary link-underline-opacity-0" href="#"
+            >Sobre</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary link-underline-opacity-0" href="#"
+            >Configurações</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-secondary link-underline-opacity-0"
+            target="_blank"
+            href="#"
+            >Suporte</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link-secondary link-underline-opacity-0"
+            target="_blank"
+            href="#"
+            >Docs</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary link-underline-opacity-0" href="#"
+            >Ajuda</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary link-underline-opacity-0" href="#"
+            >Termos & Privacidade</a
+          >
+        </li>
+      </ul>
+      <p class="small text-center mt-1">
+        ©2023
+        <a class="text-body" target="_blank" href="#">Nudles</a>
+      </p>
+    </footer>
+
+    <!-- ================================ -->
+    <!-- notificações/modais -->
+    <div class="toast-container position-fixed bottom-0 start-0 p-3">
+      <div
+        id="liveToast"
+        class="toast bg-light"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Nudles</strong>
+          <small>Agora</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">
+          Olá, usuário, sejá bem vindo! <br />
+          Considere criar uma conta Nudles.
+        </div>
+      </div>
+    </div>
+
+    <!-- modal de aviso de cookies -->
+
+    <div
+      id="liveCookies"
+      class="toast position-fixed bottom-0 start-0 m-2"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-body">
+        <strong class="me-auto">Olá, está aplicação utiliza Cookies</strong>
+        <p>
+          Para melhorar sua experiência, utilizamos o LocalStorage para salvar
+          suas preferências.
+        </p>
+        <div class="mt-2 pt-2 border-top">
+          <button
+            type="button"
+            id="aceptCookies"
+            class="btn btn-primary btn-sm"
+            data-bs-dismiss="toast"
+          >
+            Aceito
+          </button>
+          <button
+            type="button"
+            id="rejectCookies"
+            class="btn btn-danger btn-sm"
+            data-bs-dismiss="toast"
+          >
+            Não aceito
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal -->
+
+    <div
+      class="modal fade"
+      id="enterAccountModal"
+      tabindex="-1"
+      aria-labelledby="createAccountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <p class="mb-0 h4 text-center">Entrar no Nudles</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <!-- formulario -->
+            <form action="" class="needs-validation" id="loginForm" novalidate>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="floatingInputLogin"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="floatingInputLogin"
+                  >Endereço de Email ou Usuário</label
+                >
+                <div
+                  class="invalid-feedback"
+                  id="enterMethodErrorElement"
+                ></div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="floatingPasswordLogin"
+                  placeholder="Password"
+                  required
+                />
+                <label for="floatingPasswordLogin">Senha</label>
+                <div
+                  class="invalid-feedback"
+                  id="loginPasswordErrorElement"
+                ></div>
+              </div>
+              <button
+                class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                id="loginButton"
+                type="submit"
+              >
+                Entrar
+              </button>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="RememberMeLoginCheckBox"
+                />
+                <label
+                  class="form-check-label"
+                  for="RememberMeRegisterCheckBox"
+                >
+                  Lembrar de mim.
+                </label>
+              </div>
+              <hr class="my-4" />
+              <h2 class="fs-5 mb-3">Entrar de outra maneira.</h2>
+              <div class="d-flex justify-content-center flex-column">
+                <a href="#" class="btn btn-primary w-100"
+                  ><i class="bi bi-google"></i> Google</a
+                >
+                <a href="#" class="btn btn-primary w-100 my-2"
+                  ><i class="bi bi-twitter"></i> Twitter</a
+                >
+                <a href="#" class="btn btn-primary w-100"
+                  ><i class="bi bi-facebook"></i> Facebook</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- register modal -->
+
+    <div
+      class="modal fade"
+      id="registerAccountModal"
+      tabindex="-1"
+      aria-labelledby="createAccountModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            <p class="mb-0 h4 text-center">Registrar-se no Nudles</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5 pt-0">
+            <!-- formulario -->
+            <form
+              action=""
+              class="needs-validation"
+              id="registerForm"
+              novalidate
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="floatingEmailRegister"
+                  placeholder="name@example.com"
+                  required
+                />
+                <label for="floatingInputLogin">Endereço de Email</label>
+                <div
+                  class="invalid-feedback"
+                  id="registerEmailErrorElement"
+                ></div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="floatingNameRegister"
+                  placeholder="name"
+                  required
+                />
+                <label for="floatingInputLogin">Nome De usuario</label>
+                <div class="invalid-feedback" id="usernameError"></div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="floatingPasswordRegister"
+                  placeholder="Password"
+                  required
+                />
+                <label for="floatingPasswordLogin">Senha</label>
+                <div class="invalid-feedback" id="passwordError">
+                  Por favor, digite uma senha.
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="floatingRePasswordRegister"
+                  placeholder="Password"
+                  required
+                />
+                <label for="floatingPasswordLogin">Confirme a senha</label>
+                <div class="invalid-feedback">As senhas não cooncidem.</div>
+              </div>
+              <button
+                class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                id="RegisterButton"
+                type="submit"
+              >
+                Registrar
+              </button>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="RememberMeRegisterCheckBox"
+                />
+                <label
+                  class="form-check-label"
+                  for="RememberMeRegisterCheckBox"
+                >
+                  Lembrar de mim.
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="TermsRegisterCheckBox"
+                  required
+                />
+                <label class="form-check-label" for="TermsRegisterCheckBox">
+                  aceitar <a href="#">termos</a> de uso.
+                </label>
+                <div class="invalid-feedback">
+                  Aceite os termos e condições de uso do Nudles.
+                </div>
+              </div>
+              <hr class="my-4" />
+              <h2 class="fs-5 mb-3">Registrar-se de outra maneira.</h2>
+              <div class="d-flex justify-content-center flex-column">
+                <a href="#" class="btn btn-primary w-100"
+                  ><i class="bi bi-google"></i> Google</a
+                >
+                <a href="#" class="btn btn-primary w-100 my-2"
+                  ><i class="bi bi-twitter"></i> Twitter</a
+                >
+                <a href="#" class="btn btn-primary w-100"
+                  ><i class="bi bi-facebook"></i> Facebook</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
