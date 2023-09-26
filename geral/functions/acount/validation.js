@@ -94,7 +94,7 @@ function registerValidation(event) {
 
     if (usersdb) {
       usernameExists = JSON.parse(usersdb).some(
-        (user) => user.username === userField.value
+        (user) => user.username.toLowerCase() === userField.value.toLowerCase()
       );
     } else {
       usernameExists = users.some(
@@ -151,6 +151,8 @@ function registerValidation(event) {
     ) {
       create();
       update();
+    }else{ 
+      event.preventDefault();
     }
   }
 }

@@ -2,7 +2,7 @@ import { modaisFunction } from '/geral/functions/content/modals.js';
 import { fetchComments } from '/geral/functions/content/comments.js';
 import { validationErrorResult } from '/geral/functions/acount/validation.js';
 import { update } from '/geral/functions/acount/update.js';
-import { publish } from '/geral/functions/content//post.js';
+import { publish } from '/geral/functions/content/post.js';
 import { updateUserInfos, updateUiForAboutUser } from './js/scripts/content/profile.js';
 
 // Chame a função de validação
