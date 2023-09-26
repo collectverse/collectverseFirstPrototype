@@ -63,7 +63,7 @@ function updateUserInfos() {
   }
 
   if(!userModelsExist){
-    models = '/geral/model/blue_smurf_cat.glb'
+    models = '/geral/model/02.glb'
     setModelsConfig();
   }else{
     setModelsConfig();

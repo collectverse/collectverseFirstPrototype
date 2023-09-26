@@ -14,7 +14,7 @@ const users = [
     about: "Eae rapaziada, acabei de entrar no site, estou gostando da comunidade :)",
     status: "Delas",
     contact: "teste@gmail.com",
-    models: '/geral/model/little_crocodile.glb',
+    models: '/geral/model/07.glb',
   },
   {
     id: "169464069068720426104462828443",
@@ -29,7 +29,7 @@ const users = [
     about: "Descrição do usuario",
     status: "Status de relacionament",
     contact: "contato",
-    models: '/geral/model/just_a_girl.glb',
+    models: '/geral/model/04.glb',
   },
   {
     id: "169464069068720426104462828444",
@@ -44,7 +44,7 @@ const users = [
     about: "Descrição do usuario",
     status: "Status de relacionament",
     contact: "contato",
-    models: '/geral/model/takodachi.glb',
+    models: '/geral/model/15.glb',
   },
   {
     id: "169464069068720426104462828445",
@@ -283,7 +283,7 @@ const users = [
     about: "Descrição do usuario",
     status: "Status de relacionament",
     contact: "contato",
-    models: '/geral/model/luffy_nika_3d_one_piece_luffy_gear_5.glb',
+    models: '/geral/model/08.glb',
   },
   {
     id: "169464069068720426104462828462",
