@@ -16,17 +16,17 @@ function post() {
   avatarImg.innerHTML = creatPost();
 }
 
-function getISO8601DateTime() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0"); // Mês começa em 0
-  const day = String(now.getDate()).padStart(2, "0");
-  const hours = String(now.getHours()).padStart(2, "0");
-  const minutes = String(now.getMinutes()).padStart(2, "0");
-  const seconds = String(now.getSeconds()).padStart(2, "0");
+  function getISO8601DateTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0"); // Mês começa em 0
+    const day = String(now.getDate()).padStart(2, "0");
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+    const seconds = String(now.getSeconds()).padStart(2, "0");
 
-  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
-}
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+  }
 
 function publish() {
   const userData = JSON.parse(localStorage.getItem("userData"));
@@ -42,9 +42,6 @@ function publish() {
         timestamp: getISO8601DateTime(),
       };
 
-      posts.push(newPost);
-      storageCreate("posts", posts);
-
       // Chame a função para adicionar o novo comentário ao topo da lista
       addCommentToTop(newPost);
 
@@ -52,6 +49,10 @@ function publish() {
       if (postInput.classList.contains("is-invalid")) {
         postInput.classList.remove("is-invalid");
       }
+      
+      posts.push(newPost);
+      storageCreate("posts", posts);
+      
     } else {
       postInput.classList.add("is-invalid");
       postInput.focus();

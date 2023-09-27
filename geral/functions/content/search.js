@@ -45,7 +45,7 @@ function searchUsers() {
               <img src="${
                 user.profile
               }" class="avatar-DropDown rounded-circle"/>
-              <p class="m-0">${
+              <p class=" ps-2 m-0">${
                 user.username.length > 15
                   ? user.username.slice(0, 15) + "..."
                   : user.username

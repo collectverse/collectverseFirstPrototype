@@ -8,7 +8,6 @@ function creatPost() {
   const userData = JSON.parse(localStorage.getItem("userData"));
 
   const div = `
-  <div class="card-img-top"></div>
   <div class="card-body text-center">
     <div id="banner-profile" class="avatar avatar-lg rounded py-2 mb-4 position-relative bg-cover" style="background-image: url(${
       userData

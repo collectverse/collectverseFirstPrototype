@@ -35,38 +35,42 @@ function updateUserInfos() {
   // usuario que corresponde ao id
   const user = users.find((user) => user.id === userIdentification);
 
-  //  postagens do usuario
-  const userPost = document.getElementById('user-post');
-  const textArea = updateUIForComments();
+  if(user){
+    //  postagens do usuario
+    const userPost = document.getElementById('user-post');
+    const textArea = updateUIForComments();
 
-  userPost.innerHTML = textArea;
-  // entrada do comentario
-  const cardProfile = document.getElementById("card-profile-html");
-  const div = updateUI();
+    userPost.innerHTML = textArea;
+    // entrada do comentario
+    const cardProfile = document.getElementById("card-profile-html");
+    const div = updateUI();
 
-  cardProfile.innerHTML = div;
-  // sobre o usuario
-  const aboutuser = document.getElementById("about-user");
-  const about = updateUiForAboutUser();
+    cardProfile.innerHTML = div;
+    // sobre o usuario
+    const aboutuser = document.getElementById("about-user");
+    const about = updateUiForAboutUser();
 
-  aboutuser.innerHTML = about;
-  // 3d do usuario
-  const perfilmodelviewer = document.getElementById("perfil-model-viewer");
-  let models = user.models;
-  const userModelsExist = 'models' in user;
+    aboutuser.innerHTML = about;
+    // 3d do usuario
+    const perfilmodelviewer = document.getElementById("perfil-model-viewer");
+    let models = user.models;
+    const userModelsExist = 'models' in user;
 
-  function setModelsConfig() {
-    perfilmodelviewer.setAttribute("src", models);
-    perfilmodelviewer.setAttribute("preload", "auto");
-    perfilmodelviewer.setAttribute("shadow-intensity", "0.1");
-    perfilmodelviewer.setAttribute("camera-controls", "");
-  }
+    function setModelsConfig() {
+      perfilmodelviewer.setAttribute("src", models);
+      perfilmodelviewer.setAttribute("preload", "auto");
+      perfilmodelviewer.setAttribute("shadow-intensity", "0.1");
+      perfilmodelviewer.setAttribute("camera-controls", "");
+    }
 
-  if(!userModelsExist){
-    models = '/geral/model/02.glb'
-    setModelsConfig();
+    if(!userModelsExist){
+      models = '/geral/model/02.glb'
+      setModelsConfig();
+    }else{
+      setModelsConfig();
+    }
   }else{
-    setModelsConfig();
+    alert('usuario inexistente')
   }
   
 }
@@ -78,7 +82,8 @@ function updateUI() {
   const user = users.find((user) => user.id === userIdentification);
   let bannerExist = "banner" in user;
 
-  let div = `
+  if(user){
+    let div = `
         <div class="container mt-4 p-0">
             <div class="card border-0">
 
@@ -173,6 +178,7 @@ function updateUI() {
     `;
 
   return div;
+  }
 }
 
 function updateUIForComments() {
@@ -239,7 +245,8 @@ function updateUiForAboutUser() {
   // usuario que corresponde ao id
   const user = users.find((user) => user.id === userIdentification);
 
-  let div = `
+  if(user){
+    let div = `
     <div class="card border-0">
     <div class="border-0 pb-0">
         <h5 class="card-title ps-3 p-4 pb-2">Sobre</h5>
@@ -256,6 +263,9 @@ function updateUiForAboutUser() {
   `;
 
   return div
+  }else{
+    return;
+  }
 }
 
 export { updateUserInfos, updateUiForAboutUser };
