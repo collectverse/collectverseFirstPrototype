@@ -138,6 +138,7 @@ function checkPageUrl() {
 function createCard(comment) {
   let user = returnUserInfosForComments(comment);
   let idsearch = localStorage.getItem("idsearch");
+  let userData = JSON.parse(localStorage.getItem("userData"));
 
   if(urlsearch == true){
 
@@ -193,13 +194,20 @@ function createCard(comment) {
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction3">
                     <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark fa-fw pe-2"></i>Salvar Post</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-person-x fa-fw pe-2"></i>Deixar de seguir ${
-                      user.username
-                    }</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-x-circle fa-fw pe-2"></i>Não tenho interesse</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-slash-circle fa-fw pe-2"></i>Bloquear</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi bi-flag fa-fw pe-2"></i>Reportar Post</a></li>
+                    ${
+
+                      userData && userData.id == comment.user ?
+                      `
+                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash3"></i> Excluir comentario</a></li>
+                      ` :
+                      `
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-x-circle fa-fw pe-2"></i>Não tenho interesse</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-slash-circle fa-fw pe-2"></i>Bloquear</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-flag fa-fw pe-2"></i>Reportar Post</a></li>
+                      `
+
+                    }
                 </ul>
             </div>
         </div>

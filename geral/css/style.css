@@ -34,6 +34,10 @@ body {
   background: #1a1d20;
 }
 
+#user-container{
+  display: none;
+}
+
 .w-100 {
   width: 100vw;
 }

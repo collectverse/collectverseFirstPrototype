@@ -5,6 +5,7 @@ import { validationErrorResult } from '/geral/functions/acount/validation.js';
 import { update } from '/geral/functions/acount/update.js';
 import { post, publish } from '/geral/functions/content//post.js';
 import { usercard } from './scripts/content/user.js';
+import { searchUsers } from '/geral/functions/content/search.js'
 
 // carrega as notificações
 // showCommentOnce();
@@ -20,6 +21,10 @@ fetchComments();
 
 // Chame a função de validação
 validationErrorResult();
+
+// pesquisar usuario
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", searchUsers);
 
 // carregamento do documento
 document.addEventListener("DOMContentLoaded", function () {

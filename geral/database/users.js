@@ -20,7 +20,7 @@ const users = [
     id: "169464069068720426104462828443",
     profile:
       "https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg",
-    username: "Gabriel_Otaku",
+    username: "Gabriel_Otakuu",
     email: "gabriel@example.com",
     password: "senha123",
     entryDate: "dia/mes/ano",

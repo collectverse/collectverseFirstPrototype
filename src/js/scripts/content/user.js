@@ -28,7 +28,7 @@ function creatPost() {
     <h5 class="card-title">${
       userData
         ? userData.username
-        : '<span class="placeholder col-7"></span><span class="placeholder"></span>'
+        : '<br>'
     }</h5>
     <p class="card-text">
     ${

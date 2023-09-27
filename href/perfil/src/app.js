@@ -4,6 +4,7 @@ import { validationErrorResult } from '/geral/functions/acount/validation.js';
 import { update } from '/geral/functions/acount/update.js';
 import { publish } from '/geral/functions/content/post.js';
 import { updateUserInfos, updateUiForAboutUser } from './js/scripts/content/profile.js';
+import { searchUsers } from '/geral/functions/content/search.js'
 
 // Chame a função de validação
 validationErrorResult();
@@ -13,6 +14,9 @@ updateUserInfos();
 updateUiForAboutUser();
 // Inicialização do carregamento de comentários quando a página carregar
 fetchComments();
+// pesquisar usuario
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", searchUsers);
 
 // aciona o evento de publicar post
 const submitButtonPost = document.getElementById("submit-button-post");

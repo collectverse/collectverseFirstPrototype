@@ -88,22 +88,18 @@
               <div
                 class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0"
               >
-                <div class="nav-item w-100">
+                <div class="nav-item w-100 position-relative">
                   <form class="rounded position-relative">
                     <input
-                      class="form-control ps-5 bg-light"
+                      class="form-control ps-3 bg-light"
                       id="search"
                       type="search"
                       placeholder="Buscar..."
                       aria-label="Search"
                     />
-                    <button
-                      class="btn bg-transparent px-2 py-0 position-absolute top-50 start-0 translate-middle-y"
-                      type="submit"
-                    >
-                      <i class="fs-6 bi bi-search"></i>
-                    </button>
                   </form>
+                  <div id="user-container" class="position-absolute mt-3 shadow-sm p-2 bg-white rounded w-100 z-3 ">
+                  </div>
                 </div>
               </div>
               <ul
@@ -117,20 +113,18 @@
                     data-bs-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    >Paginas</a
+                    >Páginas</a
                   >
                   <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                    <li><a class="dropdown-item" href="#">Criar página</a></li>
                     <li><a class="dropdown-item" href="#">Grupos</a></li>
                     <li><a class="dropdown-item" href="#">Mensagens</a></li>
                     <li><a class="dropdown-item" href="#">Pefil</a></li>
                     <li><a class="dropdown-item" href="#">Eventos</a></li>
                     <li><a class="dropdown-item" href="#">Blog</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Pagina Inicial</a>
-                    </li>
                     <li class="dropdown-divider"></li>
                     <li>
-                      <a class="dropdown-item" href="#" target="_blank">
+                      <a class="dropdown-item" href="#">
                         <i class="bi bi-question-lg"></i>Ajuda
                       </a>
                     </li>
@@ -147,12 +141,11 @@
                     >Conta</a
                   >
                   <ul class="dropdown-menu" aria-labelledby="postMenu">
-                    <li><a class="dropdown-item" href="#">Criar pagina</a></li>
                     <li><a class="dropdown-item" href="#">Configurações</a></li>
                     <li><a class="dropdown-item" href="#">Notificações</a></li>
                     <li class="dropdown-divider"></li>
                     <li>
-                      <a class="dropdown-item" href="#">Centro de Ajuda</a>
+                      <a class="dropdown-item" href="#">Central de Ajuda</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">Termos & Privacidade</a>
