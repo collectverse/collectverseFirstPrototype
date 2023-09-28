@@ -28,10 +28,11 @@ function creatInfo() {
       let div = ` 
       <li class="nav-item dropdown z-3">
       <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <div class="avatar ms-3">
+          <div class="avatar ms-3 d-flex gap-2 justify-content-center align-items-center">
               <img class="avatar-img avatar-DropDown rounded-circle" src="${
                 userData.profile
               }" alt="Avatar do usuario">
+              <p class="m-0">${userData.username}</p>
           </div>
       </a>
       <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3 mt-md-4 border-0 shadow-sm" aria-labelledby="profileDropdown" data-bs-popper="static">

@@ -47,12 +47,13 @@
       <nav class="navbar navbar-expand-lg p-0 w-100">
         <div class="container ">
             <!-- Logo START -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand d-flex justify-content-center align-items-center align-content-center" href="index.html">
                 <img
                   src="https://media.licdn.com/dms/image/D560BAQHAs7GWFhSnng/company-logo_200_200/0/1689893020977?e=2147483647&v=beta&t=W2QZpgZ1aTfcmXvGrpWG7n92OdMTCZWjgybUWb0S79c"
                   alt="logo"
                   class="img-fluid logo rounded"
                 />
+                <p class="m-0 h6">Nudles</p>
             </a>
             <!-- Logo END -->
     
@@ -69,16 +70,16 @@
                   <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
                       <div class="nav-item w-100 position-relative">
                           <form class="rounded position-relative">
-                              <input class="form-control ps-3 bg-light" id="search" type="search" placeholder="Buscar..." aria-label="Search">
+                              <input class="form-control ps-3 bg-light border-0 " id="search" type="search" placeholder="Buscar..." aria-label="Search">
                           </form>
                           <div id="user-container" class="position-absolute mt-3 shadow-sm p-2 bg-white rounded w-100 z-3 ">
                           </div>
                       </div>
                   </div>
-                  <ul class="navbar-nav navbar-nav-scroll ms-auto nav-menu bg-white-collapse nav-bar-nav-itens-menu">
+                  <ul class="navbar-nav navbar-nav-scroll ms-auto nav-menu bg-white-collapse nav-bar-nav-itens-menu gap-2">
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle icon-link-hover" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas</a>
-                          <ul class="dropdown-menu" aria-labelledby="pagesMenu">
+                          <a class="nav-link nav-icon bg-light rounded" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-window-stack"></i></a>
+                          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="pagesMenu">
                               <li><a class="dropdown-item" href="#">Criar pagina</a></li>
                               <li><a class="dropdown-item" href="#">Grupos</a></li>
                               <li><a class="dropdown-item" href="#">Mensagens</a></li>
@@ -93,8 +94,8 @@
                           </ul>
                       </li>
                       <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle icon-link-hover" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conta</a>
-                          <ul class="dropdown-menu" aria-labelledby="postMenu">
+                          <a class="nav-link nav-icon bg-light rounded" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-vcard"></i></a>
+                          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="postMenu">
 
                             <li><a class="dropdown-item" href="#">Configurações</a></li>
                             <li><a class="dropdown-item" href="#">Notificações</a></li>
@@ -104,7 +105,7 @@
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link icon-link-hover" href="/href/store/index.html" id="pagesMenu" aria-haspopup="true" aria-expanded="false">Loja</a>
+                        <a class="nav-link nav-icon bg-light rounded" href="/href/store/index.html" id="pagesMenu" aria-haspopup="true" aria-expanded="false"><i class="bi bi-shop"></i></a>
                       </li>
                   </ul>
               </div>
@@ -125,7 +126,7 @@
     </header>
     <!-- main -->
     <main class="d-flex justify-content-center w-100 h-100 my-4">
-      <div class="container h-100">
+      <div class="container-fluid h-100">
         <div class="row align-content-between main-contaner">
           <div class="col-3 bg-transparent mb-3">
             <div id="user-card" class="card placeholder-glow position-relative border-0">    
