@@ -34,18 +34,15 @@ document.addEventListener("DOMContentLoaded", function () {
   modaisFunction();
   // evento para card com informações do usuário
   update();
-});
 
-const loadingIndicator = document.getElementById("loading-indicator");
-window.addEventListener("scroll", function () {
-  const scrollableHeight =
-    document.documentElement.scrollHeight - window.innerHeight;
-
-  if (window.scrollY >= scrollableHeight - 100) {
+  // carrega os comentarios do usuario
+  const loadingIndicator = document.getElementById("loading-indicator");
+  const commentContainer = document.getElementById("comments-return");
+    if(commentContainer){
     // Simula carregamento/requisição da DB
-    loadingIndicator.style.display = "block"; // Mostra o indicador de carregamento
+    loadingIndicator.style.display = "block";
     setTimeout(function () {
       fetchComments();
     }, 500);
-  }
+    }
 });

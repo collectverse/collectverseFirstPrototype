@@ -70,7 +70,20 @@ function updateUserInfos() {
       setModelsConfig();
     }
   }else{
-    alert('usuario inexistente')
+    const main = document.querySelector('main');
+
+    main.innerHTML = `
+    <div class="d-flex align-items-center justify-content-center vh-100">
+      <div class="text-center">
+          <h1 class="display-1 fw-bold">404</h1>
+          <p class="fs-3"> <span class="text-danger">Opps!</span> Pagina não achada.</p>
+          <p class="lead">
+              A pagina que está tentando entrar não existe.
+            </p>
+          <a href="/index.html" class="btn btn-primary">Voltar</a>
+      </div>
+    </div>
+    `
   }
   
 }
@@ -234,7 +247,9 @@ function updateUIForComments() {
   `
   return div
   }else{
-    return '';
+    let div =``;
+
+    return div
   }
 
 }

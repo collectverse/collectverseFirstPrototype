@@ -79,7 +79,9 @@ function fetchComments() {
   }
 
   commentsToAdd.forEach((comment) => {
-    commentContainer.innerHTML += createCard(comment);
+    if(commentContainer){
+      commentContainer.innerHTML += createCard(comment);
+    }
   });
 
   if (nextCommentIndex === posts.length) {

@@ -39,9 +39,7 @@ function searchUsers() {
       const userElement = document.createElement("div");
       userElement.innerHTML = `
         <div class="my-2"> 
-          <a href="href/perfil/index.html?id=${
-            user.id
-          }" class="d-flex justify-content-start align-items-center link-underline link-underline-opacity-0 text-black">
+          <a href="/href/perfil/index.html?id=${user.id}" class="d-flex justify-content-start align-items-center link-underline link-underline-opacity-0 text-black">
               <img src="${
                 user.profile
               }" class="avatar-DropDown rounded-circle"/>
