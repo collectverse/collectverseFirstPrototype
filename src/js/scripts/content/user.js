@@ -9,36 +9,59 @@ function creatPost() {
 
   const div = `
   <a href="${userData ? `href/perfil/index.html?id=${userData.id}` : "#"}" class="link-underline link-underline-opacity-0 text-black">
-    <div class="card-body text-center">
-      <div id="banner-profile" class="avatar avatar-lg rounded py-2 mb-4 position-relative bg-cover" style="background-image: url(${
-        userData
-          ? userData.banner
-          : "https://color-hex.org/colors/0d6efd.png"
-      });">
-          <img class="avatar-img avatar-img-card rounded-circle border border-white border-3 position-absolute top-100 start-0 translate-middle ms-5" src="${
-            userData ? userData.profile : "https://i.stack.imgur.com/EYX0L.png"
-          }" alt="${
-      userData
-        ? "Foto de perfil do usuário " + userData.username
-        : "imagem do usuário"
-    }">
-      </div>
-      <h5 class="card-title">${
-        userData
-          ? userData.username
-          : '<br>'
-      }</h5>
-      <p class="card-text mb-2">
-      ${
-        userData && "describe" in userData
-          ? userData.describe
-          : `
-      <span class="placeholder col-4"></span>
-        <span class="placeholder col-6"></span>
-        <span class="placeholder col-8"></span>
-      `
-      }</p>
+  
+  <div class="card-body text-center">
+    <div id="banner-profile" class=" avatar avatar-lg rounded py-2 position-relative bg-cover" style="background: #87abda50;">
+          
+          <div class="d-flex justify-content-center align-items-center gap-4 flex-column">
+          
+            <div class="d-flex gap-3 flex-column align-items-center">
+
+              <div class="d-flex justify-content-start align-items-center gap-2 w-100 ms-4">
+
+                <img class="avatar-img-card rounded-circle " src="${
+                  userData ? userData.profile : "https://i.stack.imgur.com/EYX0L.png"
+                }" alt="${
+                  userData ? 
+                  "Foto de perfil do usuário " + userData.username
+                  : "imagem do usuário"
+                }">
+              
+                <h5 class="card-title">${
+                  userData
+                    ? userData.username
+                    : ``
+                }
+                </h5>
+
+              </div>
+
+              <div class="d-flex text-center gap-5 justify-content-center align-items-center m-auto fs-6">
+            
+                <p class="fs-6"> 
+                  <span class="fw-bold">500</span>
+                  <br>
+                  <span class="fw-semibolder"><i class="bi bi-people"></i></span>
+                </P>
+                <p class="fs-6"> 
+                  <span class="fw-bold">23</span>
+                  <br>
+                  <span class="fw-semibolder"><i class="bi bi-person-check"></i></span>
+                </P>
+                <p class="fs-6"> 
+                  <span class="fw-bold">23</span>
+                  <br>
+                  <span class="fw-semibolder"><i class="bi bi-chat-left-dots"></i></span>
+                </P>
+                
+              </div>
+
+            </div>
+
+          </div>
     </div>
+  </div>
+
   </a>
 `;
   return div;

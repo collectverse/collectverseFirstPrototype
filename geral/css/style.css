@@ -76,7 +76,7 @@ body {
 }
 
 .card-user-info {
-  max-width: 274px;
+  max-width: 294px;
 }
 
 .avatar-DropDown {
@@ -138,8 +138,9 @@ body {
   object-fit: cover;
 }
 .avatar-img-card{
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
 }
 
 .new-last-a{
@@ -204,6 +205,9 @@ footer {
   }
   .new-last-a{
     display: block;
+  }
+  .card-user-info {
+    max-width: 100%;
   }
   /* perfil.html */
   .perfil-row-content{
