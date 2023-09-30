@@ -10,56 +10,26 @@ function creatPost() {
   const div = `
   <a href="${userData ? `href/perfil/index.html?id=${userData.id}` : "#"}" class="link-underline link-underline-opacity-0 text-black">
   
-  <div class="card-body text-center">
-    <div id="banner-profile" class=" avatar avatar-lg rounded py-2 position-relative bg-cover" style="background: #87abda50;">
-          
-          <div class="d-flex justify-content-center align-items-center gap-4 flex-column">
-          
-            <div class="d-flex gap-3 flex-column align-items-center">
+  <div class="card-body">
+    <div id="banner-profile" class=" avatar avatar-lg rounded py-2 position-relative bg-cover" style="background: ${userData ? `url(${userData.banner})` : '#87abda50'}; background-repeat:no-repeat; background-position:center; background-size:cover;"></div>
 
-              <div class="d-flex justify-content-start align-items-center gap-2 w-100 ms-4">
+    <div class="mt-2 d-flex justify-content-start align-items-center gap-3">
 
-                <img class="avatar-img-card rounded-circle " src="${
-                  userData ? userData.profile : "https://i.stack.imgur.com/EYX0L.png"
-                }" alt="${
-                  userData ? 
-                  "Foto de perfil do usuário " + userData.username
-                  : "imagem do usuário"
-                }">
-              
-                <h5 class="card-title">${
-                  userData
-                    ? userData.username
-                    : ``
-                }
-                </h5>
+      ${
+        userData ?
+        `
+        <img src="${userData.profile}" class="rounded-circle d-block avatar-img-card" alt="Imagem de perfil do usuário">
+        <p class="h5 text-left">
+        ${userData.username}
+        <br>
+        <span class="fs-6">${userData.describe}</span>
+        </p>
+        `
+        : ``
+      }
 
-              </div>
-
-              <div class="d-flex text-center gap-5 justify-content-center align-items-center m-auto fs-6">
-            
-                <p class="fs-6"> 
-                  <span class="fw-bold">500</span>
-                  <br>
-                  <span class="fw-semibolder"><i class="bi bi-people"></i></span>
-                </P>
-                <p class="fs-6"> 
-                  <span class="fw-bold">23</span>
-                  <br>
-                  <span class="fw-semibolder"><i class="bi bi-person-check"></i></span>
-                </P>
-                <p class="fs-6"> 
-                  <span class="fw-bold">23</span>
-                  <br>
-                  <span class="fw-semibolder"><i class="bi bi-chat-left-dots"></i></span>
-                </P>
-                
-              </div>
-
-            </div>
-
-          </div>
     </div>
+    
   </div>
 
   </a>

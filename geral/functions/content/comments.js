@@ -226,7 +226,7 @@ function createCard(comment) {
             : ""
         }
 
-        <ul class="nav nav-stack py-3 small">
+        <ul class="nav nav-stack nav-stack-comment py-3 small">
                 <li class="nav-item">
                 <a class="nav-link mb-0" href="#!"><i class="bi bi-heart pe-1"></i>Curtir (?)</a>
                 </li>

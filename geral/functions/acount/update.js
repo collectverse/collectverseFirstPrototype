@@ -32,7 +32,7 @@ function creatInfo() {
               <img class="avatar-img avatar-DropDown rounded-circle" src="${
                 userData.profile
               }" alt="Avatar do usuario">
-              <p class="m-0">${userData.username}</p>
+              <p class="m-0 remove-text-header-small">${userData.username}</p>
           </div>
       </a>
       <ul class="dropdown-menu dropdown-animation dropdown-menu-end pt-3 small me-md-n3 mt-md-4 border-0 shadow-sm" aria-labelledby="profileDropdown" data-bs-popper="static">
@@ -46,7 +46,7 @@ function creatInfo() {
                         userData.profile
                       }" alt="Avatar do usuario">
                   </div>
-                  <div>
+                  <div class="d-flex  flex-column">
                       <!-- Nome do usuário -->
                       <a class="h6 stretched-link" href="#">${
                         userData.username
@@ -69,22 +69,6 @@ function creatInfo() {
           <li class="dropdown-divider"></li>
           <!-- Opção de saída -->
           <li><a id="logoutButton" class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sair</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <!-- Opções de modo escuro -->
-          <li>
-              <div class="modeswitch-item theme-icon-active d-flex justify-content-center gap-2 align-items-center p-2 pb-0">
-                  <span>Modo:</span>
-                  <button type="button" class="btn btn-modeswitch nav-link text-primary-hover mb-0 bg-light px-3" data-bs-theme-value="light" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Claro">
-                  <i class="bi bi-lightbulb-fill"></i>
-                  </button>
-                  <button type="button" class="btn btn-modeswitch nav-link text-primary-hover mb-0 bg-light px-3" data-bs-theme-value="dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Escuro">
-                  <i class="bi bi-lightbulb"></i>
-                  </button>
-                  <button type="button" class="btn btn-modeswitch nav-link text-primary-hover mb-0 bg-light px-3" data-bs-theme-value="auto" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Automático">
-                  <i class="bi bi-circle-half"></i>
-                  </button>
-              </div>
-          </li>
           </ul>
       </li>
           `;

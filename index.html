@@ -38,248 +38,454 @@
       referrerpolicy="no-referrer"
     />
     <!-- model viewer -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
   </head>
 
   <body class="h-100 w-100 wh-100 bg-light">
     <!-- header -->
-    <header class="bg-white text-body header d-flex justify-content-center align-items-center w-100">
+    <header
+      class="bg-white text-body header d-flex justify-content-center align-items-center w-100"
+    >
       <nav class="navbar navbar-expand-lg p-0 w-100">
-        <div class="container ">
-            <!-- Logo START -->
-            <a class="navbar-brand d-flex justify-content-center align-items-center align-content-center" href="index.html">
-                <img
-                  src="https://media.licdn.com/dms/image/D560BAQHAs7GWFhSnng/company-logo_200_200/0/1689893020977?e=2147483647&v=beta&t=W2QZpgZ1aTfcmXvGrpWG7n92OdMTCZWjgybUWb0S79c"
-                  alt="logo"
-                  class="img-fluid logo rounded"
-                />
-                <p class="m-0 h6">Nudles</p>
-            </a>
-            <!-- Logo END -->
-    
-            <!-- Responsive navbar toggler -->
-            <button class="ms-auto icon-md btn btn-light px-2 border-0 nav-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-animation ">
-                    <span><i class="bi bi-list h3 "></i></span>
-                </span>
-            </button>
-    
-            <!-- Main navbar START -->
-            <div class="collapse navbar-collapse z-2 bg-white-collapse " id="navbarCollapse">
-                <div class="collapse navbar-collapse bg-white-collapse " id="navbarCollapse">
-                  <div class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0">
-                      <div class="nav-item w-100 position-relative">
-                          <form class="rounded position-relative">
-                              <input class="form-control ps-3 bg-light border-0 " id="search" type="search" placeholder="Buscar..." aria-label="Search">
-                          </form>
-                          <div id="user-container" class="position-absolute mt-3 shadow-sm p-2 bg-white rounded w-100 z-3 ">
-                          </div>
-                      </div>
-                  </div>
-                  <ul class="navbar-nav navbar-nav-scroll ms-auto nav-menu bg-white-collapse nav-bar-nav-itens-menu gap-2">
-                      <li class="nav-item dropdown">
-                          <a class="nav-link nav-icon bg-light rounded" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-window-stack"></i></a>
-                          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="pagesMenu">
-                              <li><a class="dropdown-item" href="#">Criar pagina</a></li>
-                              <li><a class="dropdown-item" href="#">Grupos</a></li>
-                              <li><a class="dropdown-item" href="#">Mensagens</a></li>
-                              <li><a class="dropdown-item" href="#">Eventos</a></li>
-                              <li><a class="dropdown-item" href="#">Blog</a></li>
-                              <li class="dropdown-divider"></li>
-                              <li>
-                                  <a class="dropdown-item" href="#">
-                                    <i class="bi bi-question-lg"></i>Ajuda
-                                  </a>
-                              </li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link nav-icon bg-light rounded" href="#" id="postMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-vcard"></i></a>
-                          <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="postMenu">
+        <div class="container">
+          <!-- Logo START -->
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center align-content-center"
+            href="index.html"
+          >
+            <img
+              src="https://media.licdn.com/dms/image/D560BAQHAs7GWFhSnng/company-logo_200_200/0/1689893020977?e=2147483647&v=beta&t=W2QZpgZ1aTfcmXvGrpWG7n92OdMTCZWjgybUWb0S79c"
+              alt="logo"
+              class="img-fluid logo rounded"
+            />
+            <p class="m-0 h6">Nudles</p>
+          </a>
+          <!-- Logo END -->
 
-                            <li><a class="dropdown-item" href="#">Configurações</a></li>
-                            <li><a class="dropdown-item" href="#">Notificações</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Central de Ajuda</a></li>
-                            <li><a class="dropdown-item" href="#">Termos & Privacidade</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link nav-icon bg-light rounded" href="/href/store/index.html" id="pagesMenu" aria-haspopup="true" aria-expanded="false"><i class="bi bi-shop"></i></a>
-                      </li>
-                  </ul>
+          <!-- Responsive navbar toggler -->
+          <button
+            class="ms-auto icon-md btn btn-light px-2 border-0 nav-menu-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-animation">
+              <span><i class="bi bi-list h3"></i></span>
+            </span>
+          </button>
+
+          <!-- Main navbar START -->
+          <div
+            class="collapse navbar-collapse z-2 bg-white-collapse"
+            id="navbarCollapse"
+          >
+            <div
+              class="collapse navbar-collapse bg-white-collapse"
+              id="navbarCollapse"
+            >
+              <div
+                class="nav mt-3 mt-lg-0 flex-nowrap align-items-center px-4 px-lg-0"
+              >
+                <div class="nav-item w-100 position-relative">
+                  <form class="rounded position-relative">
+                    <input
+                      class="form-control ps-3 bg-light border-0"
+                      id="search"
+                      type="search"
+                      placeholder="Buscar..."
+                      aria-label="Search"
+                    />
+                  </form>
+                  <div
+                    id="user-container"
+                    class="position-absolute mt-3 shadow-sm p-2 bg-white rounded w-100 z-3"
+                  ></div>
+                </div>
               </div>
-              
-                <ul class="navbar-nav navbar-nav-scroll ms-auto">
-                  <!-- metodos para entrar informações do usuario -->
-                  <div class="text-start mx-4 my-2" id="perfil-methods">
-
-                    <button type="button" id="loginButton" class="loginInput btn btn-outline-dark me-2">Entrar</button>
-                    <button type="button" id="registerButton" class="registerInput btn btn-primary">Registrar</button>  
-
-                  </div>
-                </ul>
+              <ul
+                class="navbar-nav navbar-nav-scroll ms-auto nav-menu bg-white-collapse nav-bar-nav-itens-menu gap-2"
+              >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link nav-icon bg-light rounded"
+                    href="#"
+                    id="pagesMenu"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><i class="bi bi-window-stack"></i
+                  ></a>
+                  <ul
+                    class="dropdown-menu border-0 shadow-sm"
+                    aria-labelledby="pagesMenu"
+                  >
+                    <li><a class="dropdown-item" href="#">Criar pagina</a></li>
+                    <li><a class="dropdown-item" href="#">Grupos</a></li>
+                    <li><a class="dropdown-item" href="#">Mensagens</a></li>
+                    <li><a class="dropdown-item" href="#">Eventos</a></li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bi bi-question-lg"></i>Ajuda
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link nav-icon bg-light rounded"
+                    href="#"
+                    id="postMenu"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><i class="bi bi-person-vcard"></i
+                  ></a>
+                  <ul
+                    class="dropdown-menu border-0 shadow-sm"
+                    aria-labelledby="postMenu"
+                  >
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li><a class="dropdown-item" href="#">Notificações</a></li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Central de Ajuda</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Termos & Privacidade</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-icon bg-light rounded"
+                    href="/href/store/index.html"
+                    id="pagesMenu"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    ><i class="bi bi-shop"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
 
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+              <!-- metodos para entrar informações do usuario -->
+              <div class="text-start mx-4 my-2" id="perfil-methods">
+                <button
+                  type="button"
+                  id="loginButton"
+                  class="loginInput btn btn-outline-dark me-2"
+                >
+                  Entrar
+                </button>
+                <button
+                  type="button"
+                  id="registerButton"
+                  class="registerInput btn btn-primary"
+                >
+                  Registrar
+                </button>
+              </div>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     </header>
     <!-- main -->
     <main class="d-flex justify-content-center w-100 h-100 my-4">
-      <div class="container-fluid h-100">
+      <div class="container h-100">
         <div class="row align-content-between main-contaner">
           <div class="col-3 bg-transparent mb-3">
-            <div id="user-card" class="card placeholder-glow card-user-info position-relative border-0">    
+            <div
+              id="user-card"
+              class="card placeholder-glow card-user-info position-relative border-0"
+            ></div>
+
+            <div
+              class="card placeholder-glow card-user-info position-relative border-0 mt-2"
+            >
+              <ul class="nav nav-link-secondary flex-column fw-bold gap-2 m-2">
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter active" href="#">
+                    <span><i class="bi bi-house"></i> Feed </span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter" href="#">
+                    <span><i class="bi bi-people"></i> Amigos</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter" href="#">
+                    <span><i class="bi bi-newspaper"></i> Novidades</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter" href="#">
+                    <span
+                      ><i class="bi bi-calendar2-event"></i> Eventos
+                    </span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter" href="#">
+                    <span><i class="bi bi-bell"></i> Notificações </span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark fw-lighter" href="#">
+                    <span><i class="bi bi-gear"></i> Configurações</span></a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col-6">
             <!-- coments and content -->
             <div id="user-post">
-            
               <div class="card card-body border-0" id="user-post-card">
                 <div class="d-flex mb-3">
-                    <!-- Avatar -->
-                    <div class="avatar avatar-img-post-area avatar-xs me-2">
-                        <a href="#"><img class="avatar-img rounded-circle" src="https://i.stack.imgur.com/EYX0L.png" alt=""></a>
-                    </div>
-                    <!-- Post input -->
-                    <form class="w-100">
-                        <textarea id="post-textarea" class="form-post-for-user form-control pe-4 border-0" rows="2" data-autoresize="" placeholder="Compartilhe o que está pensando..."></textarea>
-                    </form>
+                  <!-- Avatar -->
+                  <div class="avatar avatar-img-post-area avatar-xs me-2">
+                    <a href="#"
+                      ><img
+                        class="avatar-img rounded-circle"
+                        src="https://i.stack.imgur.com/EYX0L.png"
+                        alt=""
+                    /></a>
+                  </div>
+                  <!-- Post input -->
+                  <form class="w-100">
+                    <textarea
+                      id="post-textarea"
+                      class="form-post-for-user form-control pe-4 border-0"
+                      rows="2"
+                      data-autoresize=""
+                      placeholder="Compartilhe o que está pensando..."
+                    ></textarea>
+                  </form>
+                  <ul class="grid nav nav-pills nav-stack small fw-normal">
+                    <li class="nav-item dropdown ms-lg-auto">
+                      <a
+                        class="nav-link bg-light py-1 px-2 mb-0 ms-2"
+                        href="#"
+                        id="feedActionShare"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots"></i>
+                      </a>
+                      <!-- Dropdown menu -->
+                      <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="feedActionShare"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="bi bi-bookmark-check fa-fw pe-2"></i>Fazer
+                            pergunta</a
+                          >
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="bi bi-pencil-square fa-fw pe-2"></i
+                            >Ajuda</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
                 <!-- Share feed toolbar START -->
                 <ul class="grid nav nav-pills nav-stack small fw-normal">
-                    <li class="nav-item">
-                        <a class="nav-link bg-light py-1 px-2 mb-0" href="#" data-bs-toggle="modal" data-bs-target="#feedActionPhoto">
-                            <i class="bi bi-image-fill text-success pe-2"></i><spam class="attachment">Foto</spam>
-                        </a>
-                    </li>
-                    <li class="px-2  nav-item">
-                        <a class="nav-link bg-light py-1 px-2 mb-0" href="#" data-bs-toggle="modal" data-bs-target="#feedActionVideo">
-                            <i class="bi bi-camera-reels-fill text-info pe-2"></i><spam class="attachment">Vidêo</spam>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link bg-light py-1 px-2 mb-0" data-bs-toggle="modal" data-bs-target="#modalCreateEvents">
-                            <i class="bi bi-calendar2-event-fill text-danger pe-2"></i><spam class="attachment">Evento</spam>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown ms-lg-auto">
-                        <a class="nav-link bg-light py-1 px-2 mb-0 ms-2" href="#" id="feedActionShare" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-three-dots"></i>
-                        </a>
-                        <!-- Dropdown menu -->
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="feedActionShare">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw pe-2"></i>Fazer pergunta</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square fa-fw pe-2"></i>Ajuda</a></li>
-                        </ul>
-                    </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link bg-light py-1 px-2 mb-0"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#feedActionPhoto"
+                    >
+                      <i class="bi bi-image-fill text-success pe-2"></i
+                      ><spam class="attachment">Foto</spam>
+                    </a>
+                  </li>
+                  <li class="px-2 nav-item">
+                    <a
+                      class="nav-link bg-light py-1 px-2 mb-0"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#feedActionVideo"
+                    >
+                      <i class="bi bi-camera-reels-fill text-info pe-2"></i
+                      ><spam class="attachment">Vidêo</spam>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link bg-light py-1 px-2 mb-0"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCreateEvents"
+                    >
+                      <i class="bi bi-calendar2-event-fill text-danger pe-2"></i
+                      ><spam class="attachment">Evento</spam>
+                    </a>
+                  </li>
+                  
                 </ul>
-                <button id="submit-button-post" type="button" class="btn btn-primary mt-2 w-100">Publicar</button>
-                </div>
-
+                <button
+                  id="submit-button-post"
+                  type="button"
+                  class="btn btn-primary mt-2 w-100"
+                >
+                  Publicar
+                </button>
+              </div>
             </div>
             <!-- posts dos usuarios -->
-            <div id="comments-return">
+            <div id="comments-return"></div>
 
-            </div>
+            <br />
 
-              <br>
-
-              <!-- aqui fica o spinner de carregamento -->
-              <div id="loading-indicator" style="display: none;">
-                <div class="text-center">
-                  <div class="spinner-grow text-primary" role="status">
-                    <span class="visually-hidden">Carregando...</span>
-                  </div>
+            <!-- aqui fica o spinner de carregamento -->
+            <div id="loading-indicator" style="display: none">
+              <div class="text-center">
+                <div class="spinner-grow text-primary" role="status">
+                  <span class="visually-hidden">Carregando...</span>
                 </div>
               </div>
-
+            </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-3 social-items">
             <!-- <model-viewer id="home-model-viewer" class="w-100 bg-white rounded" src="geral/model/Sussy Imposter.glb" camera-controls></model-viewer> -->
 
-            <div class="card border-0 news-last">
-              <div class="pb-0 border-0 p-4 ps-3">
-                  <h5 class="card-title mb-0 fw-semibold">Novidades</h5>
-              </div>
+            <div class="card border-0">
               <div class="card-body">
-                  <div class="mb-3">
-                      <h6 class="mb-0"><a href="#" class="link-underline link-underline-opacity-0 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h6>
-                      <small>2hr</small>
+                <h5 class="card-title m-0 p-3">Mensagens</h5>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control border-0 bg-light"
+                      placeholder="Buscar conversa"
+                    />
                   </div>
-                  
-                  <div class="mb-3">
-                      <h6 class="mb-0"><a href="#" class="link-underline link-underline-opacity-0 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h6>
-                      <small>3hr</small>
-                  </div>
-                  
-                  <div class="mb-3">
-                      <h6 class="mb-0"><a href="#" class="link-underline link-underline-opacity-0 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h6>
-                      <small>4hr</small>
-                  </div>
-                  
-                  <div class="mb-3">
-                      <h6 class="mb-0"><a href="#" class="link-underline link-underline-opacity-0 text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h6>
-                      <small>6hr</small>
-                  </div>
-                  <a href="#" role="button" class="link-underline link-underline-opacity-0 text-secondary d-flex align-items-center justify-content-center" data-bs-toggle="button" aria-pressed="true">
-                      Ver Tudo
-                  </a>
+                </div>
+
+                <ul class="list-group list-group-flush d-flex gap-3">
+                  <li class="d-flex align-items-center">
+                    <div class="avatar">
+                      <img
+                        class="avatar-img rounded-circle"
+                        src="https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png"
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <a class="h6 mb-0" href="#!">Usuário 1</a>
+                      <p class="mb-0 small text-truncate">Última mensagem...</p>
+                    </div>
+                  </li>
+
+                  <li class="d-flex align-items-center">
+                    <div class="avatar">
+                      <img
+                        class="avatar-img rounded-circle"
+                        src="https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png"
+                      />
+                    </div>
+                    <div class="ms-3">
+                      <a class="h6 mb-0" href="#!">Usuário 2</a>
+                      <p class="mb-0 small text-truncate">Última mensagem...</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="d-grid mt-3">
+                  <a class="btn btn-sm btn-primary-soft" href="#!"
+                    >Ver todas as mensagens</a
+                  >
+                </div>
               </div>
-          </div>
-          
+            </div>
 
-          </div>
+            <!-- grupos -->
 
+            <div
+              class="card placeholder-glow card-user-info position-relative border-0 mt-2"
+            >
+              <div class="p-3 border-0">
+                <h5 class="card-title mb-0">Grupos</h5>
+              </div>
+
+              <div class="card-body">
+                <div class="hstack gap-2 mb-3">
+                  <div class="avatar">
+                    <a href="#!"
+                      ><img
+                        class="avatar-img rounded-circle"
+                        src="https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png"
+                    /></a>
+                  </div>
+
+                  <div class="overflow-hidden">
+                    <a class="h6 mb-0" href="#!">Clube dos Otakus </a>
+                    <p class="mb-0 small text-truncate">
+                      Discussões sobre animes
+                    </p>
+                  </div>
+
+                  <a
+                    class="btn btn-primary-soft rounded-circle btn-groups bg-light icon-md ms-auto"
+                    href="#"
+                    ><i class="bi bi-plus-lg"> </i
+                  ></a>
+                </div>
+
+                <div class="hstack gap-2 mb-3">
+                  <div class="avatar">
+                    <a href="#">
+                      <img
+                        class="avatar-img rounded-circle"
+                        src="https://spassodourado.com.br/wp-content/uploads/2015/01/default-placeholder.png"
+                      />
+                    </a>
+                  </div>
+
+                  <div class="overflow-hidden">
+                    <a class="h6 mb-0" href="#!">Otaku Universe </a>
+                    <p class="mb-0 small text-truncate">
+                      Explorando o mundo dos animes
+                    </p>
+                  </div>
+                  <a
+                    class="btn btn-primary rounded-circle btn-groups icon-md ms-auto"
+                    href="#"
+                    ><i class="bi bi-person-check-fill"> </i
+                  ></a>
+                </div>
+
+                <div class="d-grid mt-3">
+                  <a class="btn btn-sm btn-primary-soft" href="#!">Ver mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-
-    <!-- footer -->
-    <footer>
-      <ul class="nav small mt-4 justify-content-center lh-1">
-        <li class="nav-item">
-          <a class="nav-link link-secondary link-underline-opacity-0" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-secondary link-underline-opacity-0" href="#">Configurações</a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link link-secondary link-underline-opacity-0"
-            target="_blank"
-            href="#"
-            >Suporte</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-secondary link-underline-opacity-0" target="_blank" href="#"
-            >Docs</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-secondary link-underline-opacity-0" href="#">Ajuda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-secondary link-underline-opacity-0" href="#"
-            >Termos & Privacidade</a
-          >
-        </li>
-      </ul>
-      <p class="small text-center mt-1">
-        ©2023
-        <a
-          class="text-body"
-          target="_blank"
-          href="#"
-          >Nudles</a
-        >
-      </p>
-    </footer>
 
     <!-- ================================ -->
     <!-- notificações/modais -->
@@ -358,7 +564,10 @@
           <div class="modal-header p-5 pb-4 border-bottom-0 position-relative">
             <div class="w-100 text-center mb-4 mb-4 m-auto px-5">
               <p class="h4">Entre no Nudles</p>
-              <span>Olá de volta usuário <br> seja bem vindo novamente</span>
+              <span
+                >Olá de volta usuário <br />
+                seja bem vindo novamente</span
+              >
             </div>
             <button
               type="button"
@@ -454,7 +663,10 @@
           <div class="modal-header p-5 pb-4 border-bottom-0 position-relative">
             <div class="w-100 text-center mb-4 mb-4 m-auto px-5">
               <p class="h4">Registre-se no Nudles</p>
-              <span>Olá seja bem-vindo <br> ficamos felizes em te ver por aqui.</span>
+              <span
+                >Olá seja bem-vindo <br />
+                ficamos felizes em te ver por aqui.</span
+              >
             </div>
             <button
               type="button"
@@ -465,7 +677,12 @@
           </div>
           <div class="modal-body p-5 pt-0">
             <!-- formulario -->
-            <form action="" class="needs-validation" id="registerForm" novalidate>
+            <form
+              action=""
+              class="needs-validation"
+              id="registerForm"
+              novalidate
+            >
               <div class="form-floating mb-3">
                 <input
                   type="email"
@@ -569,6 +786,5 @@
         </div>
       </div>
     </div>
-
   </body>
 </html>
