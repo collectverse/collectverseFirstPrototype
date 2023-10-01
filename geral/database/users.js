@@ -9,7 +9,7 @@ const users = [
     password: "2202",
     email: "*******",
     entryDate: "6/6/6",
-    describe: "E͍̫ ̟̰̞̭͙̾̿ͫ̏̿P͉̣̞̗͉̼͋̔ͮlͤͨ͜u̹̻̝̿̚r̜̞͓̣ͅĩ̳̭̗̱̦̹̚̕b̵̘̤̝̲͂̾͆̂̓̌ͨu̫̜͚͕͓̽̾̈̋͆s̪͓̗̤̜̣ͤ͡ͅ ̠͓̬̬̯̘̹ͫͯ͠E̯̪̅̆̒̊̈ͮn͉̬̱͎͕͙ͮͤu͎͙̯̟͑̋̋ͣͪͨm͇̃ͪ̐͋̈ͦ",
+    describe: "Olá, sou Gustavo Couto",
     birth: "2023-09-12",
     about: "Eae rapaziada, acabei de entrar no site, estou gostando da comunidade :)",
     status: "Delas",

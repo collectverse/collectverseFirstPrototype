@@ -46,11 +46,6 @@ function updateUserInfos() {
     const div = updateUI();
 
     cardProfile.innerHTML = div;
-    // sobre o usuario
-    const aboutuser = document.getElementById("about-user");
-    const about = updateUiForAboutUser();
-
-    aboutuser.innerHTML = about;
     // 3d do usuario
     const perfilmodelviewer = document.getElementById("perfil-model-viewer");
     let models = user.models;
@@ -108,15 +103,18 @@ function updateUI() {
                     }
                     );">
                 
+                    
                     <!-- Button -->
                     <div class="d-flex mt-3 justify-content-center ms-sm-auto mt-lg-5 position-absolute end-0 bottom-0 m-2">
-                        ${
-                          userData && userData.id == userIdentification?
-                          `<button class="btn btn-outline-light me-2" type="button"> <i class="bi bi-pencil-fill pe-1"></i> Editar </button>` :
-                          ``
-                        }
+                          
+                        ${ userData && userData.id == userIdentification? `<button
+                        class="btn btn-outline-light me-2 btn-sm"
+                        type="button"
+                        >
+                          Editar seu perfil</button
+                        >` : `` }
                         <div class="dropdown">
-                        <button class="icon-md btn btn-outline-light" type="button" id="profileAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="icon-md btn btn-outline-light btn-sm" type="button" id="profileAction2" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileAction2">
@@ -141,41 +139,46 @@ function updateUI() {
                 </div>
 
                 <div class="card-body py-0">
+                    
+
+                <div>
+                <div class="mb-3 mt-3">
+                  <div class="avatar d-flex">
+                    <img
+                      class="avatar-img rounded-circle border border-white border-3 avatar-perfil-html"
+                      src="${user.profile}"
+                      alt="Foto de perfil do usuário"
+                    />
+  
+                    <div class="ms-sm-2 mt-3">
+                      <h2 class="mb-0 h5 text-break">${ user.username }</h2>
+                      <p class="text-break">
+                        ${ user.describe ? user.describe : "Usuário sem Descrição" }
+                      </p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+
                     <div>
-                    <div class="d-flex mb-5 mt-3">
-
-                        <div class="avatar">
-                        <img class="avatar-img rounded-circle border border-white border-3 avatar-perfil-html" src="
-                        ${
-                          user.profile
-                        }
-                        " alt="Foto de perfil do usuário">
-                        </div>
-                        <div class="ms-sm-2 mt-3">
-
-                        <h2 class="mb-0 h5 text-break">
-                        ${
-                          user.username
-                        }
-                        </h2>
-                        <p class="text-break">
-                        ${
-                            user.describe
-                            ? user.describe
-                            : "Usuário sem Descrição"
-                        }
-                        </p>
+                    <div class="border-0 pb-0 ps-3">
+                        <span class="fs-6 fw-lighter ps-0">Bio<span>
+              
+                        <div class="pb-4">
                         
+                          <h5 class="card-title fw-semibold">${user.describe}</h5>
+              
                         </div>
-
                     </div>
+                    <div class="card-body position-relative pt-0">
+                        <p>${user.about}</p>
+                        <ul class="list-unstyled mt-3 mb-0 gap-3 d-flex flex-column">
+                            <li> <i class="bi bi-calendar-date fa-fw pe-3"></i> Nasceu em <span class="fw-semibold"> ${user.birth} </span> </li>
+                            <li class="list-inline-item"><i class="bi bi-calendar2-plus me-1"></i> Entrou em <span class="fw-semibold"> ${user.entryDate} </span></li>
+                        </ul>
                     </div>
-
-                    <ul class="list-inline mb-0 ms-3">
-                    <li class="list-inline-item"><i class="bi bi-calendar2-plus me-1"></i> Entrou em: ${
-                      user.entryDate
-                    }</li>
-                    </ul>
+                  </div> 
 
                 </div>
 
@@ -201,8 +204,7 @@ function updateUIForComments() {
 
   if(userData && userData.id == userIdentification){
     let div = `
-    <br>
-    <div class="card card-body border-0" id="user-post-card">
+    <div class="card card-body border-0 mt-2" id="user-post-card">
     <div class="d-flex mb-3">
         <!-- Avatar -->
         <div class="avatar avatar-img-post-area avatar-xs me-2">
@@ -254,33 +256,4 @@ function updateUIForComments() {
 
 }
 
-function updateUiForAboutUser() {
-  
-  const userIdentification = userId();
-  // usuario que corresponde ao id
-  const user = users.find((user) => user.id === userIdentification);
-
-  if(user){
-    let div = `
-    <div class="card border-0">
-    <div class="border-0 pb-0">
-        <h5 class="card-title ps-3 p-4 pb-2">Sobre</h5>
-    </div>
-    <div class="card-body position-relative pt-0">
-        <p>${user.about}</p>
-        <ul class="list-unstyled mt-3 mb-0">
-            <li class="mb-2"> <i class="bi bi-calendar-date fa-fw pe-1"></i> Data de Nascimento: <strong> ${user.birth} </strong> </li>
-            <li class="mb-2"> <i class="bi bi-heart fa-fw pe-1"></i> Status: <strong> ${user.status} </strong> </li>
-            <li> <i class="bi bi-envelope fa-fw pe-1"></i> Contato: <strong> ${user.contact} </strong> </li>
-        </ul>
-    </div>
-  </div> 
-  `;
-
-  return div
-  }else{
-    return;
-  }
-}
-
-export { updateUserInfos, updateUiForAboutUser };
+export { updateUserInfos };

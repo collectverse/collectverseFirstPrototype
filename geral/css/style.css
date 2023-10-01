@@ -1,3 +1,7 @@
+/* *{
+  border: red 1px solid;
+} */
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -78,7 +82,7 @@ body {
   background-repeat: no-repeat;
 }
 #perfil-model-viewer {
-  height: 460px;
+  height: 86.5vh;
 }
 /* Hover */
 .icon-link-hover {
@@ -100,8 +104,8 @@ body {
   height: 240px;
 }
 .avatar-perfil-html {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   object-fit: cover;
 }
 .avatar-img-card {
@@ -124,8 +128,16 @@ body {
 .new-last-a {
   display: none;
 }
+.perfil-top .px-3{
+  padding-right: 0.8rem!important;
+    padding-left: 0.8rem!important;
+}
+.store-model-viewer{
+  height: 230px;
+}
 footer {
   margin: 0 auto;
+  max-width: 350px;
 }
 
 /* Responsividade */
@@ -133,6 +145,7 @@ footer {
   .container {
     max-width: 100%;
   }
+}
 @media screen and (max-width: 991px) {
   #navbarCollapse {
     top: 53px;
@@ -221,4 +234,8 @@ footer {
     flex-direction: column;
     gap: 8px;
   }
+  #perfil-model-viewer {
+    height: 300px;
+  }
 }
+/* classes */

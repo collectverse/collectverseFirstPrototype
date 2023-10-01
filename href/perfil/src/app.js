@@ -3,15 +3,13 @@ import { fetchComments } from '/geral/functions/content/comments.js';
 import { validationErrorResult } from '/geral/functions/acount/validation.js';
 import { update } from '/geral/functions/acount/update.js';
 import { publish } from '/geral/functions/content/post.js';
-import { updateUserInfos, updateUiForAboutUser } from './js/scripts/content/profile.js';
+import { updateUserInfos } from './js/scripts/content/profile.js';
 import { searchUsers } from '/geral/functions/content/search.js'
 
 // Chame a função de validação
 validationErrorResult();
 // pega o id do usuario requisitado
 updateUserInfos();
-// pega as informações do usuario requisitado
-updateUiForAboutUser();
 // Inicialização do carregamento de comentários quando a página carregar
 fetchComments();
 // pesquisar usuario

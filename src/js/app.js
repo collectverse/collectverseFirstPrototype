@@ -4,7 +4,7 @@ import { fetchComments } from '/geral/functions/content/comments.js';
 import { validationErrorResult } from '/geral/functions/acount/validation.js';
 import { update } from '/geral/functions/acount/update.js';
 import { post, publish } from '/geral/functions/content//post.js';
-import { usercard } from './scripts/content/user.js';
+import { usercard } from '/geral/functions/content/user.js';
 import { searchUsers } from '/geral/functions/content/search.js'
 
 // carrega as notificações
