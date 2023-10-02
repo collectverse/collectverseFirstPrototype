@@ -29,7 +29,10 @@ function searchUsers() {
     const noResultsMessage = document.createElement("div");
     noResultsMessage.innerHTML = `
       <div class="my-2"> 
-        <p class="ps-2 m-0 d-flex justify-content-center align-items-center">Usuário não encontrado!</p>
+        <div class="text-center">
+        <h1 class="display-1 fw-bold fs-5">404</h1>
+        <p class="fs-6"> <span class="text-danger">Opps!</span> usuário não encontrado.</p>
+      </div>
       </div>
     `;
     userContainer.appendChild(noResultsMessage);
