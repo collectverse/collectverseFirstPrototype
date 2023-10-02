@@ -164,12 +164,6 @@ function updateUI() {
                     <div>
                     <div class="border-0 pb-0 ps-3">
                         <span class="fs-6 fw-lighter ps-0">Bio<span>
-              
-                        <div class="pb-4">
-                        
-                          <h5 class="card-title fw-semibold">${user.describe}</h5>
-              
-                        </div>
                     </div>
                     <div class="card-body position-relative pt-0">
                         <p>${user.about}</p>

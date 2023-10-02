@@ -132,8 +132,19 @@ body {
   padding-right: 0.8rem!important;
     padding-left: 0.8rem!important;
 }
+/* loja */
 .store-model-viewer{
-  height: 230px;
+  min-height: 220px;
+}
+.rounded-custon{
+  border-bottom-right-radius:24px;
+}
+.card-buy-item{
+  width: 48%;
+  height: 425px;
+}
+.items-prominence{
+  gap: 0.6rem;
 }
 footer {
   margin: 0 auto;
@@ -237,5 +248,54 @@ footer {
   #perfil-model-viewer {
     height: 300px;
   }
+  /* loja */
+  .items-container{
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .items-prominence{
+    flex-direction: column;
+  }
+  .items-container{
+    flex-direction: column;
+  }
+  .items-prominence .card{
+    width: 100%;
+  }
 }
 /* classes */
+/* Comum */
+.comum {
+  background-color: #c1c1c1; /* Cinza pastel */
+}
+
+/* Incomum */
+.incomum {
+  background-color: #a0d7a0; /* Verde pastel */
+}
+
+/* Raro */
+.raro {
+  background-color: #a0a0d7; /* Azul pastel */
+}
+
+/* Épico */
+.epico {
+  background-color: #d7a0d7; /* Roxo pastel */
+}
+
+/* Lendário */
+.lendario {
+  background-color: #ffcc66; /* Amarelo pastel */
+}
+
+/* Mítico */
+.mitico {
+  background-color: #ff9999; /* Rosa pastel */
+}
+
+/* Excepcional */
+.excepcional {
+  background-color: #ffd700; /* Amarelo pastel mais vibrante */
+}

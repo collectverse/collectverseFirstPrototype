@@ -41,7 +41,7 @@ function create() {
   const defaultProfileImage = "https://i.stack.imgur.com/EYX0L.png"; // URL da imagem padrão
   const defaultProfilebanner =
     "https://color-hex.org/colors/0d6efd.png"; // background do perfil
-  const defaultdescribeUser = "Olá Entrei No Nudles 👋";
+  const defaultdescribeUser = "Olá Entrei No CollectVerse 👋";
   const user = register.user.value;
   const registerDate = getISO8601DateTime();
   const email = register.email.value;
