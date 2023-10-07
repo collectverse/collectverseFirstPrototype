@@ -18,7 +18,9 @@ function creatPost() {
       ${
         userData ?
         `
+        <div>
         <img src="${userData.profile}" class="rounded-circle d-block avatar-img-card" alt="Imagem de perfil do usuário">
+        </div>
         <p class="h5 text-left">
         ${userData.username}
         <br>

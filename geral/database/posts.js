@@ -77,65 +77,65 @@ const posts = [
     timestamp: "2023-07-18T11:25:00",
   },
   {
-    user: "169464069068720426104462828454",
+    user: "169464069068720426104462828443",
     id: "12",
     comment:
       "Todo mundo que me conhece ou se pelo menos acompanha meus posts aqui, sabe que sou muito fã de ToG. Acabei de assistir o primeiro episódio do anime e decidi escrever sobre as primeiras impressões que tive dele. Isso nunca aconteceu comigo. Eu nunca tive vontade alguma de fazer isso com nenhuma obra, mas farei com Tower of God porque me sinto na obrigação de guiar os futuros fãs dessa lenda. ",
     timestamp: "2023-08-02T14:40:00",
   },
   {
-    user: "169464069068720426104462828455",
+    user: "169464069068720426104462828449",
     id: "13",
     comment: "A arte em Sakura Cardcaptor é incrível!",
     timestamp: "2023-06-29T20:50:00",
   },
   {
-    user: "169464069068720426104462828456",
+    user: "169464069068720426104462828447",
     id: "14",
     comment: "Boku no Hero tem os melhores personagens!",
     timestamp: "2023-05-15T09:15:00",
   },
   {
-    user: "169464069068720426104462828457",
+    user: "169464069068720426104462828447",
     id: "15",
     comment: "Alguém mais adora animes de mistério aqui? Recomendem alguns!",
     timestamp: "2023-01-11T16:00:00",
   },
   {
-    user: "169464069068720426104462828458",
+    user: "169464069068720426104462828450",
     id: "16",
     comment:
       "Estou procurando um bom anime de romance para assistir. Alguma sugestão?",
     timestamp: "2023-09-10T14:30:00", // Exemplo de data no formato ISO 8601
   },
   {
-    user: "169464069068720426104462828459",
+    user: "169464069068720426104462828445",
     id: "17",
     comment: "Qual é o melhor anime de fantasia que vocês já assistiram?",
     timestamp: "2023-09-06T14:30:00", // Exemplo de data no formato ISO 8601
   },
   {
-    user: "169464069068720426104462828460",
+    user: "169464069068720426104462828446",
     id: "18",
     comment: "Nada como uma boa cena de luta em um anime de ação, certo?",
     timestamp: "2023-09-08T14:30:00", // Exemplo de data no formato ISO 8601
   },
   {
-    user: "169464069068720426104462828461",
+    user: "169464069068720426104462828453",
     id: "19",
     comment:
       "Finalmente comecei a assistir Charlotte e estou amando! Melhor tarde do que nunca.",
     timestamp: "2023-09-12T14:29:00", // Exemplo de data no formato ISO 8601
   },
   {
-    user: "169464069068720426104462828462",
+    user: "169464069068720426104462828453",
     id: "20",
     comment:
       "A trilha sonora de Boku no Hero é realmente épica. Mal posso esperar pelo próximo episódio!",
     timestamp: "2023-09-12T14:15:00", // Exemplo de data no formato ISO 8601
   },
   {
-    user: "169464069068720426104462828463",
+    user: "169464069068720426104462828452",
     id: "21",
     comment:
       "O Gear five é incrivelmente insano, sorte dele que ele é o principal :)",

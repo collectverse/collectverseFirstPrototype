@@ -1,53 +1,60 @@
+:root {
+    --background-color: #fafafa;
+    --contrast-color: #ffffff;
+    --first-color: #0d6efd;
+    --second-color: #131313;
+}
+
 nav.navbar{
-    background: #222222;
+    background: var(--contrast-color);
 }
 h1, h2, h3, h4, h5, h6, p, span, strong, a, a::after, ul, li{
-    color: #F2F2F2 !important;
+    color: var(--second-color) !important;
 }
 ul.dropdown-menu{
-    background: #222222;
+    background: var(--contrast-color);
 }
 ul.dropdown-menu li a{
-    color: #F2F2F2;
+    color: var(--second-color);
 }
-ul.dropdown-menu li a:hover{
-    background: #262626;
-    color: #AA95BF;
+ul.dropdown-menu li a.dropdown-item:hover{
+    background: var(--background-color);
+    color: var(--first-color);
 }
 #pagesMenu, #postMenu{
-    background: #262626 !important;
-    color: #F2F2F2;
+    background: var(--background-color) !important;
+    color: var(--second-color);
 }
 #search, #post-textarea {
-    color: #F2F2F2 !important;
-    background: #262626 !important;
+    color: var(--second-color) !important;
+    background: var(--background-color) !important;
 }
 #search::placeholder, #post-textarea::placeholder {
-    color: #F2F2F2;
+    color: var(--second-color);
 }
 #user-post-card a{
-    background: #262626 !important;
+    background: var(--background-color) !important;
 }
 #user-container{
-    background: #262626 !important;
+    background: var(--background-color) !important;
 }
 header #loginButton{
-    background: #262626;
-    color: #F2F2F2;
+    background: var(--background-color);
+    color: var(--second-color);
 }
 .dropdown-view-user{
-    background: #AA95BF !important;
-    color: #F2F2F2 !important;
+    background: var(--first-color) !important;
+    color: var(--second-color) !important;
 }
 html ,body, main{
-    background: #262626;
+    background: var(--background-color);
 }
 div.card, div.card-footer, div.card-header{
-    background: #222222 ;
+    background: var(--contrast-color) ;
 }
 div.card-header a{
-    background: #262626 !important;
+    background: var(--background-color) !important;
 }
-.modal h1, .modal h2, .modal p{
-    color: #222222 !important;
+.modal h1, .modal h2, .modal p, .modal span, .modal a{
+    color: #000000 !important;
 }

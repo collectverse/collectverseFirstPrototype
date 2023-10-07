@@ -154,7 +154,7 @@ function createCard(comment) {
 
   if (!user) {
     // Handle the case where the user is not found.
-    return `<div class="card shadow-sm mb-3 border-0" id="${comment.id}">
+    return `<div class="card shadow-sm my-3 border-0" id="${comment.id}">
         <div class="container mt-3">
           <div class="alert alert-primary" role="alert">
               <h4 class="alert-heading">Ah não!</h4>
@@ -171,7 +171,7 @@ function createCard(comment) {
 
   let cardContent = `
     <div class="card mt-3 border-0" id="${comment.id}">
-    <div class="card-header border-0 pb-0">
+    <div class="p-3 border-0 pb-0">
         <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
                 <div class="avatar my-1 me-2">

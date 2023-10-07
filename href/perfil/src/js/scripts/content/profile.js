@@ -48,8 +48,6 @@ function updateUserInfos() {
     cardProfile.innerHTML = div;
     // 3d do usuario
     const perfilmodelviewer = document.getElementById("perfil-model-viewer");
-    const backgroundColor = user.models.contrast;
-    perfilmodelviewer.style.backgroundColor = `${backgroundColor}`;
     let models = user.models.url;    
     const userModelsExist = 'models' in user;
 
@@ -170,7 +168,7 @@ function updateUI() {
                     <div class="card-body position-relative pt-0">
                         <p>${user.about}</p>
                         <ul class="list-unstyled mt-3 mb-0 gap-3 d-flex flex-column">
-                            <li> <i class="bi bi-calendar-date fa-fw pe-3"></i> Nasceu em <span class="fw-semibold"> ${user.birth} </span> </li>
+                            <li> <i class="bi bi-calendar-date fa-fw"></i> Nasceu em <span class="fw-semibold"> ${user.birth} </span> </li>
                             <li class="list-inline-item"><i class="bi bi-calendar2-plus me-1"></i> Entrou em <span class="fw-semibold"> ${user.entryDate} </span></li>
                         </ul>
                     </div>
@@ -253,4 +251,4 @@ function updateUIForComments() {
 
 }
 
-export { updateUserInfos };
+export { updateUserInfos, userId };
