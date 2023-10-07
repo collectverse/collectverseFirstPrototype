@@ -146,10 +146,6 @@ body {
 .items-prominence{
   gap: 0.6rem;
 }
-footer {
-  margin: 0 auto;
-  max-width: 350px;
-}
 
 /* Responsividade */
 @media screen and (max-width: 1199px) {

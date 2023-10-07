@@ -1,0 +1,53 @@
+nav.navbar{
+    background: #222222;
+}
+h1, h2, h3, h4, h5, h6, p, span, strong, a, a::after, ul, li{
+    color: #F2F2F2 !important;
+}
+ul.dropdown-menu{
+    background: #222222;
+}
+ul.dropdown-menu li a{
+    color: #F2F2F2;
+}
+ul.dropdown-menu li a:hover{
+    background: #262626;
+    color: #AA95BF;
+}
+#pagesMenu, #postMenu{
+    background: #262626 !important;
+    color: #F2F2F2;
+}
+#search, #post-textarea {
+    color: #F2F2F2 !important;
+    background: #262626 !important;
+}
+#search::placeholder, #post-textarea::placeholder {
+    color: #F2F2F2;
+}
+#user-post-card a{
+    background: #262626 !important;
+}
+#user-container{
+    background: #262626 !important;
+}
+header #loginButton{
+    background: #262626;
+    color: #F2F2F2;
+}
+.dropdown-view-user{
+    background: #AA95BF !important;
+    color: #F2F2F2 !important;
+}
+html ,body, main{
+    background: #262626;
+}
+div.card, div.card-footer, div.card-header{
+    background: #222222 ;
+}
+div.card-header a{
+    background: #262626 !important;
+}
+.modal h1, .modal h2, .modal p{
+    color: #222222 !important;
+}

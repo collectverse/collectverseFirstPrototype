@@ -48,7 +48,9 @@ function updateUserInfos() {
     cardProfile.innerHTML = div;
     // 3d do usuario
     const perfilmodelviewer = document.getElementById("perfil-model-viewer");
-    let models = user.models;
+    const backgroundColor = user.models.contrast;
+    perfilmodelviewer.style.backgroundColor = `${backgroundColor}`;
+    let models = user.models.url;    
     const userModelsExist = 'models' in user;
 
     function setModelsConfig() {
@@ -176,12 +178,13 @@ function updateUI() {
 
                 </div>
 
-                <div class="card-footer mt-3 pt-2 pb-0 bg-white pb-2">
+                <div class="p-3">
 
                     <ul class="nav nav-bottom-line align-items-center justify-content-center justify-content-md-start mb-0 border-0">
                     <li class="nav-item"> <a class="nav-link active" href="#"> Postagens </a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#"> Inventário </a> </li>
                     </ul>
+
                 </div>
             </div>
         </div>

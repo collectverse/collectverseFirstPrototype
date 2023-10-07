@@ -60,7 +60,7 @@ function creatInfo() {
                   </div>
               </div>
               <!-- Link para visualizar o perfil -->
-              <a class="dropdown-item btn btn-primary-soft btn-sm my-2 text-center text-primary bg-primary-subtle" href="/href/perfil/index.html?id=${userData.id}">Ver perfil</a>
+              <a class="dropdown-view-user dropdown-item btn btn-primary-soft btn-sm my-2 text-center text-primary bg-primary-subtle" href="/href/perfil/index.html?id=${userData.id}">Ver perfil</a>
           </li>
           <!-- Links do dropdown -->
           <li><a class="dropdown-item icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#"><i class="bi bi-gear fa-fw me-2"></i>Configurações e Privacidade</a></li>

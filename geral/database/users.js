@@ -14,7 +14,13 @@ const users = [
     about: "Eae rapaziada, acabei de entrar no site, estou gostando da comunidade :)",
     status: "Delas",
     contact: "teste@gmail.com",
-    models: '/geral/model/07.glb',
+    models: {
+      url: '/geral/model/07.glb',
+      background: '#262626',
+      contrast: '#222222',
+      first: '#AA95BF',
+      second: '#F2F2F2'
+    },
   },
   {
     id: "169464069068720426104462828443",
