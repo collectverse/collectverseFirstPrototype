@@ -59,8 +59,9 @@ function create() {
     password: password,
     birth: defaultInfo,
     about: defaultInfo,
-    status: defaultInfo,
-    contact: defaultInfo
+    models: {
+      url: "/geral/model/04.glb"
+    }
   };
 
   users.push(newUser);

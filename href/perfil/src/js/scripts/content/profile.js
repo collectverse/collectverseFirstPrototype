@@ -59,7 +59,7 @@ function updateUserInfos() {
     }
 
     if(!userModelsExist){
-      models = '/geral/model/02.glb'
+      models = '/geral/model/default.glb'
       setModelsConfig();
     }else{
       setModelsConfig();

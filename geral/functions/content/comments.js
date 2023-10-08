@@ -191,7 +191,7 @@ function createCard(comment) {
                 </div>
             </div>
             <div class="dropdown">
-                <a href="#" class="nav-link text-secondary btn btn-secondary-soft-hover nav-link bg-light py-1 px-2 mb-0" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="nav-link text-secondary btn btn-secondary-soft-hover nav-link cardShare py-1 px-2 mb-0" id="cardShareAction3" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="bi bi-three-dots text-primary"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cardShareAction3">

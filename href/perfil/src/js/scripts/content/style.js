@@ -2,22 +2,16 @@ function applyUserStyles(user) {
   if (user) {
     switch (user.models.url) {
       case "/geral/model/01.glb":
-        user.models.background = "#00FF00"; // Verde claro
-        user.models.contrast = "#FFFFFF"; // Branco
-        user.models.first = "#FFFFFF"; // Branco
-        user.models.second = "#FFFFFF"; // Branco
+        user.models.background = "#B7E4C7"; // Verde claro
+        user.models.contrast = "#95D5B2"; // Branco
+        user.models.first = "#1B4332"; // Branco
+        user.models.second = "#081C15"; // Branco
         break;
-      case "/geral/model/02.glb":
-        user.models.background = "#E6E6E6"; // Cinza claro
-        user.models.contrast = "#FFFFFF"; // Branco
-        user.models.first = "#FFFFFF"; // Preto
-        user.models.second = "#000000"; // Preto
-        break;
-      case "/geral/model/04.glb":
-        user.models.background = "#ADD8E6"; // Azul claro
-        user.models.contrast = "#FFFFFF"; // Branco
-        user.models.first = "#DDA0DD"; // Violeta
-        user.models.second = "#FF4500"; // Laranja avermelhado
+      case "/geral/model/03.glb":
+        user.models.background = "#3C096C"; // Azul claro
+        user.models.contrast = "#240046"; // Branco
+        user.models.first = "#fffcf2"; // Violeta
+        user.models.second = "#ccc5b9"; // Laranja avermelhado
         break;
       case "/geral/model/07.glb":
         user.models.background = "#262626"; // Rosa claro
@@ -26,38 +20,47 @@ function applyUserStyles(user) {
         user.models.second = "#F2F2F2"; // Cinza claro
         break;
       case "/geral/model/08.glb":
-        user.models.background = "#FFC0CB"; // Rosa claro
-        user.models.contrast = "#FFC0CB"; // Rosa claro
-        user.models.first = "#F5F5F5"; // Cinza claro
-        user.models.second = "#F5F5F5"; // Cinza claro
+        user.models.background = "#FFC8DD"; // Rosa claro
+        user.models.contrast = "#FFAFCC"; // Rosa claro
+        user.models.first = "#BDE0FE"; // Cinza claro
+        user.models.second = "#fff"; // Cinza claro
         break;
       case "/geral/model/11.glb":
-        user.models.background = "#90EE90"; // Verde claro
-        user.models.contrast = "#D2B48C"; // Marrom claro
-        user.models.first = "#D2B48C"; // Marrom claro
-        user.models.second = "#FFFFFF"; // Branco
+        user.models.background = "#588157"; // Verde claro
+        user.models.contrast = "#3a5a40"; // Marrom claro
+        user.models.first = "#dad7cd"; // Marrom claro
+        user.models.second = "#cad2c5"; // Branco
         break;
       case "/geral/model/13.glb":
-        user.models.background = "#800080"; // Roxo
-        user.models.contrast = "#FF0000"; // Vermelho
-        user.models.first = "#FFFFFF"; // Branco
-        user.models.second = "#FFFFFF"; // Branco
+        user.models.background = "#3c096c"; // Roxo
+        user.models.contrast = "#240046"; // Vermelho
+        user.models.first = "#02c39a"; // Branco
+        user.models.second = "#d3d3d3"; // Branco
         break;
       case "/geral/model/15.glb":
-        user.models.background = "#D2B48C"; // Marrom claro
-        user.models.contrast = "#8B4513"; // Marrom escuro
-        user.models.first = "#8B4513"; // Marrom escuro
-        user.models.second = "#8B4513"; // Marrom escuro
+        user.models.background = "#C0A78A"; // Marrom claro
+        user.models.contrast = "#c6ac8f"; // Marrom escuro
+        user.models.first = "#0A0908"; // Marrom escuro
+        user.models.second = "#0A0908"; // Marrom escuro
+        break;
+      case "/geral/model/default.glb":
+        user.models.background = "#f8f9fa"; // Cinza claro
+        user.models.contrast = "#FFFFFF"; // Branco
+        user.models.first = "#FFFFFF"; // Branco
+        user.models.second = "#000000"; // Preto
         break;
       default:
-        // Mantenha as cores padrão (#262626, #222222, #AA95BF, #F2F2F2)
+        user.models.background = "#f8f9fa"; // Cinza claro
+        user.models.contrast = "#FFFFFF"; // Branco
+        user.models.first = "#FFFFFF"; // Branco
+        user.models.second = "#000000"; // Preto
         break;
     }
 
     const perfilmodelviewer = document.getElementById("perfil-model-viewer");
     const backgroundColor = user.models.contrast;
     perfilmodelviewer.style.backgroundColor = `${backgroundColor}`;
-    
+
     document.documentElement.style.setProperty(
       "--background-color",
       user.models.background

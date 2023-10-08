@@ -38,9 +38,32 @@ ul.dropdown-menu li a.dropdown-item:hover{
 #user-container{
     background: var(--background-color) !important;
 }
+header{
+    background: var(--contrast-color)!important;
+}
 header #loginButton{
     background: var(--background-color);
     color: var(--second-color);
+}
+header #registerButton{
+    background: var(--background-color);
+    color: var(--second-color);
+    border: 1px solid var(--contrast-color);
+}
+.active{
+    background: var(--background-color) !important;
+    color: var(--second-color);
+}
+.alert-primary{
+    background: var(--contrast-color);
+    color: var(--second-color);
+    border: 1px solid var(--contrast-color);
+}
+.cardShare{
+    background: var(--background-color) !important;
+}
+.cardShare i{
+    color: var(--second-color) !important;
 }
 .dropdown-view-user{
     background: var(--first-color) !important;

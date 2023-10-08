@@ -20,7 +20,7 @@ const users = [
     id: "169464069068720426104462828443",
     profile:
       "https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg",
-    username: "Gabriel_Otakuu",
+    username: "1",
     password: "senha456",
     email: "gabriel@example.com",
     entryDate: "2023-09-20",
@@ -28,14 +28,14 @@ const users = [
     birth: "1995-03-15",
     about: "Amo assistir animes e fazer novos amigos.",
     models: {
-      url: '/geral/model/02.glb'
+      url: '/geral/model/01.glb'
     },
   },
   {
     id: "169464069068720426104462828444",
     profile:
       "https://wallpapers.com/images/hd/cool-anime-girl-pfp-aoi-hinami-f7u50zvrx77vpmsr.jpg",
-    username: "Maria_AnimeLover",
+    username: "mariaqwg",
     password: "senha789",
     email: "maria@example.com",
     entryDate: "2023-08-14",
@@ -43,14 +43,14 @@ const users = [
     birth: "1998-06-25",
     about: "Gosto de desenhar e assistir animes nos meus tempos livres.",
     models: {
-      url: '/geral/model/04.glb'
+      url: '/geral/model/11.glb'
     },
   },
   {
     id: "169464069068720426104462828445",
     profile:
       "https://i.pinimg.com/564x/9a/c0/88/9ac088f008229b258c16e6292c34beec.jpg",
-    username: "Lucas_AnimeFan",
+    username: "lucasGames",
     password: "senha101112",
     email: "lucas@example.com",
     entryDate: "2023-07-10",
@@ -58,14 +58,14 @@ const users = [
     birth: "1997-04-05",
     about: "Gosto de jogar jogos online e colecionar action figures de animes.",
     models: {
-      url: '/geral/model/08.glb'
+      url: '/geral/model/03.glb'
     },
   },
   {
     id: "169464069068720426104462828446",
     profile:
       "https://dthezntil550i.cloudfront.net/ab/latest/ab2110240404186150021019451/1280_960/a514afd1-8b64-402c-afb6-d98b373da2e5.png",
-    username: "Mika_HunterXHunter",
+    username: "4",
     password: "senha131415",
     email: "mika@example.com",
     entryDate: "2023-06-25",
@@ -73,14 +73,14 @@ const users = [
     birth: "1996-11-20",
     about: "Sempre em busca do meu anime favorito.",
     models: {
-      url: '/geral/model/08.glb'
+      url: '/geral/model/13.glb'
     },
   },
   {
     id: "169464069068720426104462828447",
     profile:
       "https://i.pinimg.com/564x/d5/5f/42/d55f42c1edee2c7f60b803a51f0f17df.jpg",
-    username: "Sakura_Cardcaptor",
+    username: "sakuraFã",
     password: "senha161718",
     email: "sakura@example.com",
     entryDate: "2023-05-14",
@@ -88,14 +88,14 @@ const users = [
     birth: "1999-02-28",
     about: "Adoro cosplay e colecionar cartas mágicas.",
     models: {
-      url: '/geral/model/11.glb'
+      url: '/geral/model/08.glb'
     },
   },
   {
     id: "169464069068720426104462828448",
     profile:
       "https://i.pinimg.com/1200x/ee/61/37/ee61374e60f036d0d605c37b3a7bee8a.jpg",
-    username: "Naruto_Uzumaki",
+    username: "naruto5235",
     password: "senha192021",
     email: "naruto@example.com",
     entryDate: "2023-04-03",
@@ -103,14 +103,14 @@ const users = [
     birth: "1997-10-10",
     about: "Acredito no poder da amizade e nunca desisto dos meus sonhos.",
     models: {
-      url: '/geral/model/13.glb'
+      url: '/geral/model/11.glb'
     },
   },
   {
     id: "169464069068720426104462828449",
     profile:
       "https://i.pinimg.com/564x/7b/f9/25/7bf925f35bfd9ada17291685fa755901.jpg",
-    username: "OnePiece_Luffy",
+    username: "luffy o Pirata",
     password: "senha222324",
     email: "luffy@example.com",
     entryDate: "2023-03-12",
@@ -118,14 +118,14 @@ const users = [
     birth: "1995-05-05",
     about: "Minha missão é encontrar o One Piece e me tornar o Rei dos Piratas.",
     models: {
-      url: '/geral/model/15.glb'
+      url: '/geral/model/13.glb'
     },
   },
   {
     id: "169464069068720426104462828450",
     profile:
       "https://i.pinimg.com/736x/5a/f9/34/5af934dc6c7b4f6c278ed410813b3afa.jpg",
-    username: "Yuri_YuriFan",
+    username: "8",
     password: "senha252627",
     email: "yuri@example.com",
     entryDate: "2023-02-18",
@@ -133,7 +133,7 @@ const users = [
     birth: "1996-09-08",
     about: "Gosto de ler mangás e assistir a adaptações de animes de romance.",
     models: {
-      url: '/geral/model/04.glb'
+      url: '/geral/model/15.glb'
     },
   },
   {
@@ -148,7 +148,7 @@ const users = [
     birth: "1990-12-25",
     about: "Vivo em busca de desafios e sou invulnerável!",
     models: {
-      url: '/geral/model/04.glb'
+      url: '/geral/model/15.glb'
     },
   },
   {
@@ -178,7 +178,7 @@ const users = [
     birth: "1999-07-20",
     about: "Adoro ler mangás e colecionar edições raras.",
     models: {
-      url: '/geral/model/02.glb'
+      url: '/geral/model/default.glb'
     },
   },
 ];
