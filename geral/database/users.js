@@ -133,7 +133,7 @@ const users = [
     birth: "1996-09-08",
     about: "Gosto de ler mangás e assistir a adaptações de animes de romance.",
     models: {
-      url: '/geral/model/15.glb'
+      url: '/geral/model/13.glb'
     },
   },
   {
@@ -148,7 +148,7 @@ const users = [
     birth: "1990-12-25",
     about: "Vivo em busca de desafios e sou invulnerável!",
     models: {
-      url: '/geral/model/15.glb'
+      url: '/geral/model/11.glb'
     },
   },
   {

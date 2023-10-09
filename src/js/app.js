@@ -7,9 +7,6 @@ import { post, publish } from '/geral/functions/content//post.js';
 import { usercard } from '/geral/functions/content/user.js';
 import { searchUsers } from '/geral/functions/content/search.js'
 
-// carrega as notificações
-// showCommentOnce();
-
 // carrega o post
 post();
 

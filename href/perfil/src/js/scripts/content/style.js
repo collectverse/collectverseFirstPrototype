@@ -32,10 +32,10 @@ function applyUserStyles(user) {
         user.models.second = "#cad2c5"; // Branco
         break;
       case "/geral/model/13.glb":
-        user.models.background = "#3c096c"; // Roxo
-        user.models.contrast = "#240046"; // Vermelho
-        user.models.first = "#02c39a"; // Branco
-        user.models.second = "#d3d3d3"; // Branco
+        user.models.background = "#001233"; // Roxo
+        user.models.contrast = "#001845"; // Vermelho
+        user.models.first = "#80FFDB"; // Branco
+        user.models.second = "#72EFDD"; // Branco
         break;
       case "/geral/model/15.glb":
         user.models.background = "#C0A78A"; // Marrom claro
