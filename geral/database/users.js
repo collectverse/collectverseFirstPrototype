@@ -20,7 +20,7 @@ const users = [
     id: "169464069068720426104462828443",
     profile:
       "https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg",
-    username: "1",
+    username: "gabrielGames",
     password: "senha456",
     email: "gabriel@example.com",
     entryDate: "2023-09-20",
@@ -49,7 +49,8 @@ const users = [
   {
     id: "169464069068720426104462828445",
     profile:
-      "https://i.pinimg.com/564x/9a/c0/88/9ac088f008229b258c16e6292c34beec.jpg",
+      "https://i.pinimg.com/564x/ac/a0/e8/aca0e8c3817192be8704da8fe03208d8.jpg",
+      banner: 'https://i.pinimg.com/564x/4b/51/fa/4b51fa84306ea52b73ba7297b765f82d.jpg',
     username: "lucasGames",
     password: "senha101112",
     email: "lucas@example.com",
@@ -65,7 +66,7 @@ const users = [
     id: "169464069068720426104462828446",
     profile:
       "https://dthezntil550i.cloudfront.net/ab/latest/ab2110240404186150021019451/1280_960/a514afd1-8b64-402c-afb6-d98b373da2e5.png",
-    username: "4",
+    username: "Mika",
     password: "senha131415",
     email: "mika@example.com",
     entryDate: "2023-06-25",
@@ -125,7 +126,7 @@ const users = [
     id: "169464069068720426104462828450",
     profile:
       "https://i.pinimg.com/736x/5a/f9/34/5af934dc6c7b4f6c278ed410813b3afa.jpg",
-    username: "8",
+    username: "Yuki",
     password: "senha252627",
     email: "yuri@example.com",
     entryDate: "2023-02-18",
@@ -154,7 +155,8 @@ const users = [
   {
     id: "169464069068720426104462828452",
     profile:
-      "https://i.pinimg.com/564x/39/54/58/395458615dbd75cc2acdd3f55232d0c1.jpg",
+      "https://i.pinimg.com/564x/62/ff/89/62ff89ed1fee0e24f110ea229cca5188.jpg",
+      banner:'https://i.pinimg.com/564x/d8/aa/07/d8aa07574af2e769755aabe93f39154d.jpg',
     username: "OtakuForever",
     password: "senha313233",
     email: "otaku@example.com",
