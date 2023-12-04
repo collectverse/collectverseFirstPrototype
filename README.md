@@ -1,6 +1,6 @@
 <h1 align="center">CollectVerse: Rede Social de Animes</h1>
 
->Status: Developing ⚠️ 
+>Status: Discontinued ⚠️ 
 #### Bem-vindo ao repositório do CollectVerse, uma rede social de animes com navegação em 3D! Este projeto de front-end tem o objetivo de proporcionar uma experiência única no mundo geek, permitindo que os usuários personalizem seus personagens e explorem um ambiente virtual imersivo.
 
 O CollectVerse é uma plataforma online voltada para os entusiastas de animes e cultura geek. Com recursos avançados de navegação em 3D, os usuários poderão explorar ambientes virtuais temáticos, interagir com outros fãs de animes e compartilhar suas experiências e opiniões sobre séries, filmes, cosplay e muito mais. Além disso, o CollectVerse permite que os usuários personalizem seus próprios personagens virtuais, tornando a experiência ainda mais envolvente.
